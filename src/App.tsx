@@ -24,10 +24,11 @@ function App() {
     switch (pressedKey.key) {
       case 'ENTER': {
         // checar se tem as 5 letras -> não tendo, gerar animação de erro
-        // checar se é a palavra correta -> se for, gerar animação de vitória
+        // checar se é a palavra correta -> se for, gerar animação de vitória e mostrar estatísticas
         // checar se é uma palavra válida
         //  -> não sendo, gerar toast dizendo
         //  -> sendo, dizer as letras corretas e pintar no keyboard e no board
+        // se todas as chances foram usadas -> mostra animação de erro / derrota e estatísticas
 
         setCurrentLetter(0);
         setCurrentRow(currentRow + 1);
